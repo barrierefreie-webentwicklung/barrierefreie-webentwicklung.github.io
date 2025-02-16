@@ -41,9 +41,12 @@ a:visited {
 
 hgroup p {
   font-size: var(--l-font);
+  margin-block-start: 0;
+  margin-block-end: var(--s-spacing);
 }
 
 hgroup h1 {
   margin-block-start: 0;
+  margin-block-end: 0;
   font-size: var(--xxl-font);
 }
