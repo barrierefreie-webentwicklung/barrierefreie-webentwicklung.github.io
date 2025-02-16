@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abschnitt 3.5 – Barrierefreie Webentwicklung</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/inhalte.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skiplink">Zu den Inhalten</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Das Buch</a></li>
+          <li><a aria-current="page" href="../inhalte.html">Inhalte</a></li>
+          <li><a href="../schulungen.html">Schulungen</a></li>
+          <li>
+            <a class="cta-triangle" href="kaufen.html"
+              ><p class="cta-button">Jetzt kaufen</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>3.5 Was haben Live-Regionen mit E-Autos zu tun?</h1>
+      <h2>Einleitung</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="303">
+        <li>
+          <a
+            href="https://tollwerk.de/projekte/tipps-techniken-inklusiv-barrierefrei/aria-live-regionen#hinweise-und-tipps-fuer-die-umsetzung-von-live-regionen"
+            >ARIA-Live-Regionen: Hinweise und Tipps für die Umsetzung von
+            Live-Regionen – tollwerk</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.barrierefreies-webdesign.de/knowhow/live-regions/attribute.html"
+            >ARIA-Attribute für Live-Regionen – Alive and Kicking</a
+          >
+        </li>
+        <li>
+          <a href="https://conffab.com/presentation/understanding-live-region"
+            >Understanding Live Regions – Conffab</a
+          >
+        </li>
+      </ol>
+      <h2>3.5.1 &lt;output&gt;</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="306">
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element"
+            >The Output Element – WHATWG HTML Standard</a
+          >
+        </li>
+        <li>
+          <a href="https://w3c.github.io/html-aam/#el-output"
+            >HTML Accessibility API Mappings: The Output Element – W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.scottohara.me/blog/2019/07/10/the-output-element.html"
+            >The Output Element: Accessibility Considerations – Scott O'Hara</a
+          >
+        </li>
+      </ol>
+      <h2>3.5.2 ARIA-Rollen mit impliziter Live-Region-Semantik</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="309">
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#live_region_roles"
+            >Live Region Roles – WAI-ARIA 1.2</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#alert"
+            >Alert Role – WAI-ARIA 1.2</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#log"
+            >Log Role – WAI-ARIA 1.2</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#marquee"
+            >Marquee Role – WAI-ARIA 1.2</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#status"
+            >Status Role – WAI-ARIA 1.2</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#timer"
+            >Timer Role – WAI-ARIA 1.2</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/w3c/aria/issues/1104"
+            >Consider deprecating all special live region roles except alert –
+            GitHub Issue #1104</a
+          >
+        </li>
+      </ol>
+      <h2>3.5.3 aria-live</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="316">
+        <li>
+          Der Text im Bild lautert auf Deutsch: »Wir sollten uns auf unsere
+          Marketing-Prioritäten fokussieren und nicht von neuen Sachen ablenken
+          lassen -– oh, schaut mal, ein Eichhörnchen!« Copyright:
+          <a
+            href="https://www.marketingweek.com/revealed-marketoonist-top-all-time"
+            >www.marketingweek.com</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#aria-relevant"
+            >ARIA Relevant Attribute – WAI-ARIA 1.2</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://medium.com/dev-channel/why-authors-should-avoid-aria-relevant-5d3164fab1e3"
+            >Why Authors Should Avoid ARIA Relevant – Medium</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tollwerk.de/projekte/tipps-techniken-inklusiv-barrierefrei/barrierefrei-verstecken#visuell-verbergen"
+            >Visuell verbergen – Tollwerk</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tollwerk.de/projekte/tipps-techniken-inklusiv-barrierefrei/aria-live-regionen#aria-attribute-fuer-die-feinabstimmung"
+            >ARIA-Attribute zur Feinabstimmung – Tollwerk</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.sarasoueidan.com/blog/accessible-notifications-with-aria-live-regions-part-1"
+            >Accessible Notifications with ARIA Live Regions (Part 1) – Sara
+            Soueidan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tollwerk.de/projekte/tipps-techniken-inklusiv-barrierefrei/aria-live-regionen#rolestatus"
+            >ARIA Live Regionen: Rolle "Status" – Tollwerk</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://dequeuniversity.com/library/aria/liveregion-playground"
+            >ARIA Live Region Playground – Deque University</a
+          >
+        </li>
+        <li>
+          <a href="https://a11ysupport.io/tech/aria/aria-controls_attribute"
+            >ARIA Controls Attribute – A11y Support</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tetralogical.com/blog/2024/05/01/why-are-my-live-regions-not-working"
+            >Why Are My Live Regions Not Working? – TetraLogical</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver"
+            >MutationObserver – MDN Web Docs</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tollwerk.de/projekte/tipps-techniken-inklusiv-barrierefrei/aria-live-regionen"
+            >ARIA Live Regionen – Tollwerk</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/quickref"
+            >WCAG 2.2 Quick Reference – W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.scottohara.me/blog/2022/02/05/dynamic-results.html"
+            >Dynamic Results – Scott O’Hara</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.sarasoueidan.com/blog/accessible-notifications-with-aria-live-regions-part-2"
+            >Accessible Notifications with ARIA Live Regions (Part 2) – Sara
+            Soueidan</a
+          >
+        </li>
+        <li>
+          <a href="https://talks.yatil.net/Ux0REi/were-aria-live"
+            >We’re ARIA Live – Yatil Talks</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog"
+            >Alert Dialog Pattern – WAI-ARIA Authoring Practices Guide</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=W5YAaLLBKhQ"
+            >ARIA Live Regions: Best Practices – YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://material.angular.io/cdk/a11y/overview#liveannouncer"
+            >Live Announcer – Angular Material</a
+          >
+        </li>
+        <li><a href="https://announcer.vue-a11y.com">Vue A11y Announcer</a></li>
+        <li>
+          <a href="https://github.com/AlmeroSteyn/react-aria-live"
+            >React ARIA Live – GitHub</a
+          >
+        </li>
+      </ol>
+      <a class="back" href="../inhalte.html">Zurück zur Übersicht</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Maria Korneeva</p>
+      <p>
+        <a href="mailto:kontakt@barrierefreie-webentwicklung.com"
+          >kontakt@barrierefreie-webentwicklung.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

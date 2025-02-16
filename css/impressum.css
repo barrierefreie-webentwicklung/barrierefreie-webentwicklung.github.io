@@ -1,0 +1,16 @@
+main p {
+  margin-block-end: unset;
+  margin-block-start: unset;
+}
+
+main {
+  gap: var(--s-spacing);
+}
+
+hgroup h1 {
+  font-size: var(--xl-font);
+}
+
+hgroup p {
+  font-size: var(--m-font);
+}

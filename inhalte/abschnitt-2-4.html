@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abschnitt 2.4 – Barrierefreie Webentwicklung</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/inhalte.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skiplink">Zu den Inhalten</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Das Buch</a></li>
+          <li><a aria-current="page" href="../inhalte.html">Inhalte</a></li>
+          <li><a href="../schulungen.html">Schulungen</a></li>
+          <li>
+            <a class="cta-triangle" href="kaufen.html"
+              ><p class="cta-button">Jetzt kaufen</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>
+        2.4 Benutzerdefinierte Einstellungen: Warum gibt es keine Mindestangabe
+        für die Schriftgröße?
+      </h1>
+      <h2>Einleitung</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="133">
+        <li>
+          <a
+            href="https://www.boia.org/blog/accessibility-tips-let-users-control-font-size"
+            >Accessibility Tips: Let Users Control Font Size – Bureau of
+            Internet Accessibility</a
+          >
+        </li>
+      </ol>
+      <h2>2.4.1 Einstellungen für die Vorder- und Hintergrundfarbenv</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="134">
+        <li>
+          Chrome-basierte Browser und Safari bieten aktuell keine Möglichkeit,
+          Farben einzustellen.
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+            >Using media queries – MDN Web Docs</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia"
+            >Window: matchMedia() method – MDN Web Docs</a
+          >
+        </li>
+      </ol>
+      <h2>2.4.2 prefers-reduced-motion</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="137">
+        <li>
+          <a
+            href="https://www.inovex.de/de/blog/removing-animations-people-troubled-motion-css-angular"
+            >Better User Experience: Removing Animations for People Troubled by
+            Motion (CSS / Angular) – inovex GmbH</a
+          >
+        </li>
+      </ol>
+      <h2>2.4.3 forced-colors und prefers-contrast</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="138">
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors"
+            >forced-colors - CSS: Cascading Style Sheets | MDN</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.smashingmagazine.com/2022/06/guide-windows-high-contrast-mode"
+            >The Guide To Windows High Contrast Mode — Smashing Magazine</a
+          >
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/de/docs/Web/CSS/system-color"
+            >&lt;system-color&gt; - CSS: Cascading Style Sheets | MDN</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://kilianvalkhof.com/2023/css-html/i-no-longer-understand-prefers-contrast"
+            >I no longer understand prefers-contrast | Kilian Valkhof</a
+          >
+        </li>
+      </ol>
+      <h2>2.4.4 prefers-color-scheme</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="142">
+        <li>
+          <a href="https://web.dev/articles/prefers-color-scheme"
+            >prefers-color-scheme: Hello darkness, my old friend – web.dev</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://web.dev/articles/color-scheme?hl=de#interplay_with_prefers-color-scheme"
+            >Verbessertes Standardstil im dunklen Modus mit der CSS-Eigenschaft
+            „color-scheme“ und dem entsprechenden Meta-Tag – web.dev</a
+          >
+        </li>
+      </ol>
+      <h2>2.4.5 prefers-reduced-transparency und inverted-colors</h2>
+      <p>Keine Fußnoten vorhanden</p>
+      <h2>2.4.6 Betriebssystem- und Browsereinstellungen</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="144">
+        <li>
+          <a href="https://www.sarasoueidan.com/blog/tips-for-reader-modes"
+            >Design for reading: tips for optimizing content for Reader modes
+            and reading apps – Sara Soueidan</a
+          >
+        </li>
+        <li>
+          Siehe dazu z. B.
+          <a href="https://www.sarasoueidan.com/blog/tips-for-reader-modes"
+            >Operating System and Browser Accessibility Display Modes</a
+          >
+          oder
+          <a
+            href="https://medium.com/@mandy.michael/building-websites-for-safari-reader-mode-and-other-reading-apps-1562913c86c9"
+            >Building websites for Safari Reader Mode and other reading apps</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.chrome.com/docs/devtools/rendering/emulate-css?hl=de"
+            >CSS-Medienfunktionen emulieren | Chrome DevTools – Chrome for
+            Developers</a
+          >
+        </li>
+      </ol>
+      <a class="back" href="../inhalte.html">Zurück zur Übersicht</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Maria Korneeva</p>
+      <p>
+        <a href="mailto:kontakt@barrierefreie-webentwicklung.com"
+          >kontakt@barrierefreie-webentwicklung.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

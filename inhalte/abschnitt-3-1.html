@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abschnitt 3.1 – Barrierefreie Webentwicklung</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/inhalte.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skiplink">Zu den Inhalten</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Das Buch</a></li>
+          <li><a aria-current="page" href="../inhalte.html">Inhalte</a></li>
+          <li><a href="../schulungen.html">Schulungen</a></li>
+          <li>
+            <a class="cta-triangle" href="kaufen.html"
+              ><p class="cta-button">Jetzt kaufen</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>3.1 WAI-ARIA</h1>
+      <h2>3.1.1 Schalter im Web und semantisches HTML</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="221">
+        <li>
+          <a href="https://en.wikipedia.org/wiki/File:On-Off_Switch.jpg"
+            >File:On-Off Switch.jpg – Wikipedia</a
+          >
+        </li>
+        <li>
+          <a href="https://web.dev/learn/html/semantic-html"
+            >Semantic HTML – web.dev</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tink.uk/perceived-affordances-and-the-functionality-mismatch"
+            >Perceived Affordances and the Functionality Mismatch – Tink</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H49"
+            >H49: Using semantic markup to mark emphasized or special text –
+            W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics"
+            >Screen Readers Support for Text-Level HTML Semantics – TPGi</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2017/12/tweaking-text-level-styles.html"
+            >Tweaking Text-Level Styles – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del#accessibility"
+            >&lt;del&gt;: The Deleted Text element – MDN Web Docs</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F87"
+            >F87: Failure of Success Criterion 1.3.1 due to inserting
+            non-decorative content by using ::before and ::after pseudo-elements
+            and the 'content' property in CSS – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/w3c/wcag/issues/3748"
+            >Is the assumption behind technique F87 still valid (meta issue) –
+            GitHub</a
+          >
+        </li>
+      </ol>
+      <h2>3.1.2 WAI-ARIA: Rollen, Zustände, Eigenschaften</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="230">
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#isAbstract"
+            >Accessible Rich Internet Applications (WAI-ARIA) 1.2 – 5.2 Abstract
+            Roles</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://ericwbailey.website/published/it-needs-to-map-back-to-a-role"
+            >It needs to map back to a role – Eric Bailey</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.scottohara.me/blog/2019/02/12/high-contrast-aria-and-images.html"
+            >Quick(er) Note on ARIA and Windows High Contrast Mode – Scott
+            O'Hara</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/dev/common-microsyntaxes.html#boolean-attributes"
+            >HTML Standard – 2.3.1 Boolean attributes</a
+          >
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/de/docs/Glossary/IDL"
+            >IDL – MDN Web Docs Glossar</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://hidde.blog/boolean-attributes-in-html-and-aria-whats-the-difference"
+            >Boolean attributes in HTML and ARIA: what’s the difference? – Hidde
+            de Vries</a
+          >
+        </li>
+      </ol>
+      <h2>3.1.3 ARIA-Regeln</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="236">
+        <li>
+          Wenn Sie in die Abbildung heranzoomen möchten, können Sie das auf der
+          Seite der WAI tun:
+          <a href="https://www.w3.org/WAI/ARIA/1.2/class-diagram"
+            >WAI-ARIA 1.2 Class Diagram – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/using-aria/#rule1"
+            >Using ARIA: First Rule of ARIA Use – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/ARIA/apg/practices/read-me-first"
+            >ARIA Authoring Practices Guide: Read Me First – W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.accessibility-developer-guide.com/knowledge/aria/purpose"
+            >Purpose of ARIA – Accessibility Developer Guide</a
+          >
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+            >HTML elements reference – MDN Web Docs</a
+          >
+        </li>
+        <li>
+          <a href="https://html.spec.whatwg.org"
+            >HTML Living Standard – WHATWG</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2"
+            >Accessible Rich Internet Applications (WAI-ARIA) 1.2 – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/core-aam-1.2"
+            >Core Accessibility API Mappings 1.2 – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/html-aam-1.0"
+            >HTML Accessibility API Mappings 1.0 – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/svg-aam-1.0"
+            >SVG Accessibility API Mappings 1.0 – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/graphics-aam-1.0"
+            >Graphics Accessibility API Mappings 1.0 – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/graphics-aria-1.0"
+            >Graphics ARIA 1.0 – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/html-aria">ARIA in HTML – W3C</a>
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/accname-1.2"
+            >Accessible Name and Description Computation 1.2 – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/ARIA/apg"
+            >ARIA Authoring Practices Guide – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/using-aria/#secondrule"
+            >Using ARIA: Second Rule of ARIA Use – W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.accessibility-developer-guide.com/examples/sensible-aria-usage"
+            >Sensible usage of ARIA roles and attributes – Accessibility
+            Developer Guide</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://whatsock.github.io/visual-aria/github-bookmarklet/visual-aria.htm"
+            >The Visual ARIA Bookmarklet – WhatSock</a
+          >
+        </li>
+      </ol>
+      <a class="back" href="../inhalte.html">Zurück zur Übersicht</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Maria Korneeva</p>
+      <p>
+        <a href="mailto:kontakt@barrierefreie-webentwicklung.com"
+          >kontakt@barrierefreie-webentwicklung.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

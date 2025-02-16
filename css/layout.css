@@ -1,0 +1,165 @@
+:root {
+  :focus-visible {
+    outline-offset: 0.25em;
+  }
+}
+
+html,
+body {
+  font-family: var(--standard);
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding-top: var(--xs-spacing);
+  padding-bottom: var(--xs-spacing);
+  padding-left: var(--xs-spacing);
+  padding-right: var(--xxs-spacing);
+}
+
+.skiplink {
+  margin-right: var(--s-spacing);
+  font-size: var(--l-font);
+  font-family: "Reddit Sans";
+  font-weight: bold;
+}
+
+.skiplink:not(:focus):not(:active):not(:focus-within) {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+header nav {
+  display: inline-block;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav li {
+  margin-right: var(--s-spacing);
+  margin-bottom: 1rem;
+}
+
+/* Anpassen */
+.last-nav-item {
+  margin-right: 15rem;
+}
+
+header nav li:last-child {
+  margin-left: auto;
+  margin-right: 0;
+  margin-inline-start: auto;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: var(--l-font);
+  font-family: "Reddit Sans";
+  font-weight: bold;
+}
+
+header nav a:visited {
+  color: var(--primary-color);
+}
+
+header nav a:hover,
+header nav a[aria-current="page"] {
+  text-decoration: underline 3px;
+  text-underline-offset: var(--xxs-spacing);
+}
+
+.cta-button {
+  display: inline-block;
+  position: relative;
+  transform: rotate(45deg);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-top: 4rem;
+  margin-left: 2.5rem;
+  margin-right: -1rem;
+}
+
+.cta-triangle {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.cta-triangle:hover,
+.cta-triangle:focus-visible,
+.cta-button:hover {
+  background-color: var(--primary-color);
+}
+
+.cta-triangle:hover p,
+.cta-triangle:focus-visible p {
+  text-decoration: underline 3px white;
+  text-underline-offset: var(--xxs-spacing);
+}
+
+main {
+  padding: var(--m-spacing) var(--l-spacing);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 var(--xs-spacing);
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  font-size: var(--xxs-font);
+  margin-top: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* narrow */
+@media screen and (max-width: 50rem) {
+  header nav li {
+    margin-right: 10rem;
+  }
+
+  main {
+    padding: var(--s-spacing) var(--xs-spacing);
+  }
+
+  footer {
+    justify-content: center;
+  }
+}

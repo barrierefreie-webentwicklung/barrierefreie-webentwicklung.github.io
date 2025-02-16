@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abschnitt 4.10 – Barrierefreie Webentwicklung</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/inhalte.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skiplink">Zu den Inhalten</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Das Buch</a></li>
+          <li><a aria-current="page" href="../inhalte.html">Inhalte</a></li>
+          <li><a href="../schulungen.html">Schulungen</a></li>
+          <li>
+            <a class="cta-triangle" href="kaufen.html"
+              ><p class="cta-button">Jetzt kaufen</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>4.10 Wie aus Formularen digitale Passierscheine werden</h1>
+      <h2>4.10.1 Bestandteile eines Formulars</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="492">
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H44"
+            >Using label elements to associate text labels with form controls –
+            W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=YhlAVlfH0rQ"
+            >The Accessibility of Placeholders in Form Fields – YouTube</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://learn.microsoft.com/en-gb/microsoft-edge/devtools-guide-chromium/accessibility/test-issues-tool#verify-that-input-fields-have-labels"
+            >Verify that input fields have labels – Microsoft Edge DevTools</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.smashingmagazine.com/2018/06/placeholder-attribute"
+            >The Placeholder Attribute Is Not a Label – Smashing Magazine</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Placeholder_Research"
+            >Placeholder Research – W3C</a
+          >
+        </li>
+        <li>
+          <a href="https://www.nngroup.com/articles/form-design-placeholders"
+            >Placeholders in Form Fields Are Harmful – Nielsen Norman Group</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons"
+            >Inclusively Hiding & Styling Checkboxes and Radio Buttons – Sara
+            Soueidan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2021/03/under-engineered-select-menus.html"
+            >Under-Engineered Select Menus – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/de/docs/Learn/Forms/Styling_web_forms"
+            >Styling von Webformularen – MDN Web Docs</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/de/docs/Learn/Forms/Advanced_form_styling#appearance_kontrolle_%C3%BCber_os-level-styling"
+            >Fortgeschrittenes Formular-Styling: appearance Kontrolle über
+            OS-Level-Styling – MDN Web Docs</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.tpgi.com/short-note-on-the-accessibility-of-styled-form-controls"
+            >Short Note on the Accessibility of Styled Form Controls – TPGi</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/tutorials/forms/custom-controls"
+            >Custom Controls – W3C Web Accessibility Initiative</a
+          >
+        </li>
+      </ol>
+      <h2>4.10.2 Hilfe beim Ausfüllen: Autovervollständigung</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="504">
+        <li>
+          <a href="https://datatracker.ietf.org/doc/html/rfc761#section-2.10"
+            >Robustness Principle – RFC 761, Section 2.10</a
+          >. Mehr Informationen zu den UX-Gesetzen finden Sie im Buch
+          <a href="https://dpunkt.de/produkt/laws-of-ux-2"
+            >“Laws of UX” von Jon Yablonki</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2023/06/under-engineered-comboboxen.html"
+            >Under-Engineered Comboboxen? – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tollwerk.de/projekte/tipps-techniken-inklusiv-barrierefrei/die-aria-combobox"
+            >Die ARIA-Combobox – tollwerk</a
+          >
+        </li>
+        <li>
+          <a href="https://cauldron.dequelabs.com/components/Combobox"
+            >Combobox Component – Deque Cauldron React</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/ARIA/apg/patterns/combobox"
+            >Combobox Pattern – WAI-ARIA Authoring Practices Guide</a
+          >
+        </li>
+        <li>
+          <a href="https://better-mobile-inputs.netlify.app"
+            >Build a Better Mobile Input</a
+          >
+        </li>
+      </ol>
+      <h2>4.10.3 Validierung – Umgang mit Formatierung und Pflichtfeldern</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="510">
+        <li>
+          <a
+            href="https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation"
+            >A Guide To Accessible Form Validation – Smashing Magazine</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H90.html"
+            >Indicating required form controls using label or legend – W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.smashingmagazine.com/2022/09/inline-validation-web-forms-ux"
+            >A Complete Guide To Live Validation UX – Smashing Magazine</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://cloudfour.com/thinks/progressively-enhanced-form-validation-part-1-html-and-css"
+            >Progressively Enhanced Form Validation, Part 1: HTML and CSS –
+            Cloud Four</a
+          >
+        </li>
+        <li>
+          Angular und Vue (Vuetify, VeeValidate) fügen novalidate automatisch zu
+          Formularen hinzu und bieten eigene Validatoren an. In React (Formik,
+          React Hook Form) können Sie es selbst tun.
+        </li>
+      </ol>
+      <h2>
+        4.10.4 Barrierefreie Fehlermeldungen und Hilfestellung bei Fehlern
+      </h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="515">
+        <li>
+          <a
+            href="https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation"
+            >A Guide To Accessible Form Validation – Smashing Magazine</a
+          >
+        </li>
+        <li>
+          <a href="https://adrianroselli.com/2023/04/exposing-field-errors.html"
+            >Exposing Field Errors – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://design-system.service.gov.uk/components/error-summary"
+            >Error summary – GOV.UK Design System</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://css-tricks.com/making-disabled-buttons-more-inclusive"
+            >Making Disabled Buttons More Inclusive – CSS-Tricks</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons"
+            >Usability Pitfalls of Disabled Buttons, and How To Avoid Them –
+            Smashing Magazine</a
+          >
+        </li>
+      </ol>
+      <h2>4.10.5 Wer suchet, der findet: Suchfunktionalität</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="520">
+        <li>
+          Je nachdem, wie alt die Browserversionen sind, die Sie unterstützen,
+          kann es sein, dass einige davon noch nicht mit dem relativ neuen
+          Element umgehen können.
+        </li>
+        <li>
+          <a
+            href="https://www.scottohara.me/blog/2022/02/19/custom-clear-buttons.html"
+            >Custom Clear Buttons – Scott O'Hara</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search"
+            >&lt;input type="search"&gt; – MDN Web Docs</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.scottohara.me/blog/2022/02/05/dynamic-results.html"
+            >Considering Dynamic Search Results and Content – Scott O'Hara</a
+          >
+        </li>
+        <li>
+          <a href="https://a11ysupport.io"
+            >Accessibility Support – a11ysupport.io</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/bitv2-0/bitv2-0-node.html"
+            >Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) – Portal
+            Barrierefreiheit</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://handreichungen.bfit-bund.de/barrierefreie-uie/0.4/formular.html"
+            >Formular – Barrierefreie Gestaltung von User Interface-Elementen</a
+          >
+        </li>
+      </ol>
+      <a class="back" href="../inhalte.html">Zurück zur Übersicht</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Maria Korneeva</p>
+      <p>
+        <a href="mailto:kontakt@barrierefreie-webentwicklung.com"
+          >kontakt@barrierefreie-webentwicklung.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Reddit Sans";
+  src: url("/assets/fonts/RedditSans-Bold.woff2") format("woff2"),
+    url("/assets/fonts/RedditSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+body {
+  font-size: 125%;
+  hyphens: auto;
+}
+
+h1 {
+  font-size: var(--xl-font);
+}
+
+h2 {
+  font-size: var(--l-font);
+}
+
+h3 {
+  font-size: var(--m-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--highlight);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:visited {
+  color: var(--tertiary-color);
+}
+
+hgroup p {
+  font-size: var(--l-font);
+}
+
+hgroup h1 {
+  margin-block-start: 0;
+  font-size: var(--xxl-font);
+}

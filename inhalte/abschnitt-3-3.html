@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abschnitt 3.3 – Barrierefreie Webentwicklung</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/inhalte.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skiplink">Zu den Inhalten</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Das Buch</a></li>
+          <li><a aria-current="page" href="../inhalte.html">Inhalte</a></li>
+          <li><a href="../schulungen.html">Schulungen</a></li>
+          <li>
+            <a class="cta-triangle" href="kaufen.html"
+              ><p class="cta-button">Jetzt kaufen</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>3.3 Zugänglicher Name und Beschreibung</h1>
+      <h2>3.3.1 Zugänglicher Name</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="270">
+        <li>
+          Der genaue Text und die Reihenfolge der Informationen hängen von der
+          Browser-Screenreader-Kombination und den Screenreader-Einstellungen
+          ab.
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/wai-aria-1.2/#namefromprohibited"
+            >Accessible Rich Internet Applications (WAI-ARIA) 1.2 – 5.2.1 Name
+            from Author</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions"
+            >Providing Accessible Names and Descriptions – WAI-ARIA Authoring
+            Practices Guide</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/using-aria/#label-support"
+            >Using ARIA: Practical Support – aria-label, aria-labelledby and
+            aria-describedby</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2019/02/uncanny-a11y.html#ARIA-Label"
+            >Uncanny A11y – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2019/11/aria-label-does-not-translate.html"
+            >aria-label Does Not Translate – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://ericwbailey.website/published/aria-label-is-a-code-smell"
+            >aria-label is a code smell – Eric Bailey</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2020/12/be-careful-with-dynamic-accessible-names.html"
+            >Be Careful with Dynamic Accessible Names – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.darins.page/articles/dynamic-accessible-descriptions-reference"
+            >Dynamic Accessible Descriptions Reference – Darin Senneff</a
+          >
+        </li>
+        <li>
+          <a href="https://adrianroselli.com/2021/01/multi-function-button.html"
+            >Multi-Function Button – Adrian Roselli</a
+          >
+        </li>
+      </ol>
+      <h2>3.3.2 Zugängliche Beschreibung</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="280">
+        <li>
+          Der Punkt nach "Erforderlich" dient besserer Lesbarkeit. Die
+          tatsächliche Screenreader-Ausgabe enthält keine zusätzliche
+          Satzzeichen.
+        </li>
+        <li>
+          <a href="https://www.tpgi.com/describing-aria-describedby"
+            >Describing aria-describedby – TPGi</a
+          >
+          (Die Information bzgl. Browser-Unterstützung ist jedoch etwas
+          veraltet.)
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2022/04/accessible-description-exposure.html"
+            >Accessible Description Exposure – Adrian Roselli</a
+          >
+        </li>
+      </ol>
+      <h2>3.3.3 Berechnung: Viele Wege, ein Rom</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="283">
+        <li>
+          <a href="https://www.w3.org/TR/accname-1.1"
+            >Accessible Name and Description Computation 1.1 – W3C</a
+          >
+          Version 1.2 hat noch den Status eines Arbeitsentwurfes:
+          <a href="https://www.w3.org/TR/accname-1.2"
+            >Accessible Name and Description Computation 1.2 – W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://cerovac.com/a11y/2024/03/common-aria-problems-found-in-accessibility-audits"
+            >Common ARIA problems found in accessibility audits – Bogdan on
+            Digital Accessibility (A11y)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.accessibility-developer-guide.com/knowledge/aria/bad-practices"
+            >Bad ARIA practices – Accessibility Developer Guide</a
+          >
+        </li>
+        <li>
+          <a href="https://webaim.org/projects/million"
+            >The WebAIM Million – The 2024 report on the accessibility of the
+            top 1,000,000 home pages</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2020/01/my-priority-of-methods-for-labeling-a-control.html"
+            >My Priority of Methods for Labeling a Control – Adrian Roselli</a
+          >
+        </li>
+      </ol>
+      <a class="back" href="../inhalte.html">Zurück zur Übersicht</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Maria Korneeva</p>
+      <p>
+        <a href="mailto:kontakt@barrierefreie-webentwicklung.com"
+          >kontakt@barrierefreie-webentwicklung.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+:root {
+  /* Colors */
+  --primary-color: black;
+  --primary-color-invert: white;
+  --secondary-color: #2c548d;
+  --tertiary-color: #623f14;
+
+  /* Media breack points */
+  --mobile: 480px;
+  --tablet: 768px;
+
+  /* Spacing */
+  --xxs-spacing: 0.5rem;
+  --xs-spacing: 1.5rem;
+  --s-spacing: 3rem;
+  --m-spacing: 5rem;
+  --l-spacing: 10rem;
+
+  /* Fonts*/
+
+  --highlight: "Reddit Sans", "Microsoft Sans Serif", "Arial Narrow", sans-serif;
+  --standard: "Tahoma", "Helvetica", sans-serif;
+
+  /* Font sizes */
+
+  --xxs-font: clamp(0.8rem, 1.5vw, 1rem); /* 12.8px → 16px */
+  --xs-font: clamp(1rem, 1.8vw, 1.2rem); /* 16px → 19.2px */
+  --s-font: clamp(1.2rem, 2vw, 1.4rem); /* 19.2px → 22.4px */
+  --m-font: clamp(1.4rem, 2.2vw, 1.6rem); /* 22.4px → 25.6px */
+  --l-font: clamp(1.6rem, 2.5vw, 1.8rem); /* 25.6px → 28.8px */
+  --xl-font: clamp(2rem, 5vw, 3.6rem); /* **32px → 57.6px** ✅ */
+  --xxl-font: clamp(3rem, 7vw, 5rem); /* **48px → 80px** ✅ */
+}

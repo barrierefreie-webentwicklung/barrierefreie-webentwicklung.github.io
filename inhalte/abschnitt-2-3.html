@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abschnitt 2.3 – Barrierefreie Webentwicklung</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/inhalte.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skiplink">Zu den Inhalten</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Das Buch</a></li>
+          <li><a aria-current="page" href="../inhalte.html">Inhalte</a></li>
+          <li><a href="../schulungen.html">Schulungen</a></li>
+          <li>
+            <a class="cta-triangle" href="kaufen.html"
+              ><p class="cta-button">Jetzt kaufen</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>2.3 Typographie und Responsiveness: optische Enttäuschung</h1>
+      <h2>Einleitung</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="112">
+        <li>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11220212"
+            >Variations on the Hermann grid: an extinction illusion - PubMed</a
+          >
+        </li>
+      </ol>
+      <h2>2.3.1 Schneller, höher, stärker … reinzoomen</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="113">
+        <li>
+          Mittlerweile sind deutlich größere Displays für Handys gängig. Das ist
+          ein Kritikpunkt an den WCAG:
+          <a
+            href="https://www.netz-barrierefrei.de/wordpress/die-wcag-braucht-eine-revolution-eine-antwort-auf-erik-eggert"
+            >WAI und WCAG brauchen eine Revolution – Digitale
+            Barrierefreiheit</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C37"
+            >Technik C37: Verwendung von CSS max-width und height zum Anpassen
+            von Bildern</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2022/06/keyboard-only-scrolling-areas.html"
+            >Tastaturgesteuerte Scrollbereiche – Adrian Roselli</a
+          >
+        </li>
+      </ol>
+      <h2>
+        2.3.2 Barrierefreier Perspektivenwechsel – von Portrait bis Landscape
+      </h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="116">
+        <li>
+          <a href="https://css-tricks.com/snippets/css/orientation-lock"
+            >Orientation Lock – CSS-Tricks</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation"
+            >Managing screen orientation – MDN Web Docs</a
+          >
+        </li>
+      </ol>
+      <h2>2.3.3 Textskalierung: Die Folgen halten sich im Rahmen</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="118">
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F69"
+            >Failure of Success Criterion 1.4.4 due to using absolute units in
+            CSS to restrict the size of text containers</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F69"
+            >Failure of Success Criterion 1.4.4 due to using absolute units in
+            CSS to restrict the size of text containers</a
+          >
+        </li>
+        <li>
+          Die Gruppe der CSS-Einheiten svh, lvh, dvh, svw, lvw, dvw, svi, lvi,
+          dvi, svb, lvb, dvb, svmin, lvmin, dvmin, svmax, lvmax, dvmax
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C12"
+            >Using percent for font sizes</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C13"
+            >Using named font sizes</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR34"
+            >Calculating size and position in a way that scales with text
+            size</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://stevenmouret.github.io/web-accessibility-guidelines/accessibility/presentation-of-information/customizing-the-display.html"
+            >Customizing the display - Web Accessibility Guidelines</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility"
+            >The Surprising Truth About Pixels and Accessibility: should I use
+            pixels or rems?</a
+          >
+        </li>
+        <li>
+          <a href="https://www.matuzo.at/blog/2023/how-browsers-zoom-text"
+            >Totally remdom, or How browsers zoom text</a
+          >
+        </li>
+      </ol>
+      <h2>2.3.4 Mehr Platz für Barrierefreiheit mit Textabstand</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="127">
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C36"
+            >Technik C36: Zulassen von Textabstands-Überschreibungen</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C35"
+            >Technik C35: Zulassen von Textabständen ohne Zeilenumbruch</a
+          >
+        </li>
+        <li>
+          <a href="https://bitvtest.de/test-methodik/web/werkzeugliste"
+            >Werkzeugliste (Web) – BIK BITV-Test</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/openstyles/stylus/blob/master/README.md"
+            >Stylus – Benutzerdefinierte Styles für das Web</a
+          >
+        </li>
+        <li>
+          <a href="https://axesslab.com/fonts-dont-matter"
+            >Schriftarten sind nicht so wichtig – Axess Lab</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0"
+            >Ein Leitfaden zum Verständnis, was eine Schriftart zugänglich macht
+            und wie man fundierte Entscheidungen trifft</a
+          >
+        </li>
+      </ol>
+      <a class="back" href="../inhalte.html">Zurück zur Übersicht</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Maria Korneeva</p>
+      <p>
+        <a href="mailto:kontakt@barrierefreie-webentwicklung.com"
+          >kontakt@barrierefreie-webentwicklung.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

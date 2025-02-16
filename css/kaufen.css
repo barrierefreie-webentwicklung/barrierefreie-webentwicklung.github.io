@@ -1,0 +1,27 @@
+.book-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-spacing);
+  align-items: start;
+}
+
+.book-info img {
+  flex: 1;
+  border: var(--primary-color) 1px solid;
+  max-width: min(100%, 30rem);
+}
+
+.details {
+  flex: 1;
+}
+
+.anbieter li {
+  margin-top: var(--xs-spacing);
+  margin-bottom: var(--xs-spacing);
+}
+
+header nav a[aria-current="page"] {
+  color: var(--primary-color-invert);
+  text-decoration: underline 3px;
+  text-underline-offset: var(--xxs-spacing);
+}

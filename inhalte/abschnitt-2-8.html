@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abschnitt 2.8 – Barrierefreie Webentwicklung</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/inhalte.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skiplink">Zu den Inhalten</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Das Buch</a></li>
+          <li><a aria-current="page" href="../inhalte.html">Inhalte</a></li>
+          <li><a href="../schulungen.html">Schulungen</a></li>
+          <li>
+            <a class="cta-triangle" href="kaufen.html"
+              ><p class="cta-button">Jetzt kaufen</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>2.8 Fokusmanagement: Das unsichtbare Verbrechen</h1>
+      <h2>2.8.1 Fokusreihenfolge</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="181">
+        <li>
+          <a href="https://adrianroselli.com/2015/09/source-order-matters.html"
+            >Source Order Matters – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/index.html#show-web-page-tabbing-order"
+            >Accessibility Inspector – Firefox Source Docs</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://chrome.google.com/detail/taba11y/aocppmckdocdjkphmofnklcjhdidgmga"
+            >TabA11y – Chrome Web Store</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2023/08/where-to-put-focus-when-deleting-a-thing.html"
+            >Where to Put Focus When Deleting a Thing – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.accessibility-developer-guide.com/knowledge/keyboard-only/how-to-implement"
+            >How to Implement Websites That Are Ready for Keyboard Only Usage –
+            Accessibility Developer Guide</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface"
+            >Developing a Keyboard Interface – WAI-ARIA Authoring Practices
+            Guide</a
+          >
+        </li>
+      </ol>
+      <h2>2.8.2 Stets sichtbarer Fokus</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="187">
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding"
+            >scroll-padding - CSS: Cascading Style Sheets | MDN</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C43"
+            >C43: Using CSS scroll-padding to un-obscure content | WAI | W3C</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.tpgi.com/prevent-focused-elements-from-being-obscured-by-sticky-headers"
+            >Prevent focused elements from being obscured by sticky headers -
+            TPGi</a
+          >
+        </li>
+      </ol>
+      <h2>2.8.3 Das automatische Fokussieren</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="190">
+        <li>
+          <a
+            href="https://www.boia.org/blog/accessibility-tips-be-cautious-when-using-autofocus"
+            >Accessibility Tips: Be Cautious When Using Autofocus – Bureau of
+            Internet Accessibility</a
+          >
+        </li>
+      </ol>
+      <h2>2.8.4 Inhaltsänderung vs. Kontextänderung</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="191">
+        <li>
+          <a
+            href="https://bitvtest.de/pruefschritt/bitv-20-plus-web/bitv-20-plus-web-9-3-2-1-keine-unerwartete-kontextaenderung-bei-fokus"
+            >Prüfschritt 9.3.2.1 Keine unerwartete Kontextänderung bei Fokus –
+            BIK BITV-Test</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F69"
+            >Failure of Success Criterion 3.2.1 due to changing the context when
+            a component receives focus – W3C</a
+          >
+        </li>
+      </ol>
+      <h2>2.8.5 Fokusfalle</h2>
+      <p>Keine Fußnoten vorhanden</p>
+      <h2>2.8.6 Fokusring</h2>
+      <h3 class="footnotes">Fußnoten:</h3>
+
+      <ol start="193">
+        <li>
+          <a href="https://meyerweb.com/eric/tools/css/reset/index.html"
+            >CSS Tools: Reset CSS – meyerweb.com</a
+          >
+        </li>
+        <li>
+          Genau genommen entscheiden Browser anhand von Heuristiken, ob die
+          Pseudoklasse :focus-visible greift, siehe die MDN Dokumentation dazu:
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
+            >:focus-visible - CSS: Cascading Style Sheets | MDN</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2023/08/where-to-put-focus-when-deleting-a-thing.html"
+            >Where to Put Focus When Deleting a Thing – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=1OBoXqM3B4A"
+            >Designing for People Who Use a Mouse – Henny Swan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adrianroselli.com/2017/02/avoid-default-browser-focus-styles.html"
+            >Avoid Default Browser Focus Styles – Adrian Roselli</a
+          >
+        </li>
+        <li>
+          <a href="https://www.sarasoueidan.com/blog/focus-indicators"
+            >A Guide to Designing Accessible, WCAG-Conformant Focus Indicators –
+            Sara Soueidan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://tink.uk/the-difference-between-keyboard-and-screen-reader-navigation"
+            >The Difference Between Keyboard and Screen Reader Navigation –
+            Léonie Watson</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.tempertemper.net/blog/screen-reader-users-and-the-tab-key"
+            >Screen Reader Users and the Tab Key – tempertemper</a
+          >
+        </li>
+      </ol>
+      <a class="back" href="../inhalte.html">Zurück zur Übersicht</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Maria Korneeva</p>
+      <p>
+        <a href="mailto:kontakt@barrierefreie-webentwicklung.com"
+          >kontakt@barrierefreie-webentwicklung.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+main ul li {
+  line-height: var(--s-spacing);
+}
+
+main ol li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.back {
+  display: inline-block;
+  margin-top: var(--s-spacing);
+}
+
+ol {
+  padding-inline-start: 0;
+  margin-left: var(--m-spacing);
+}
+
+.footnotes {
+  font-size: unset;
+  font-family: var(--standard);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* narrow */
+@media screen and (max-width: 50rem) {
+  ol {
+    margin-left: var(--s-spacing);
+  }
+}

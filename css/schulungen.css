@@ -1,0 +1,26 @@
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.cta-link {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Reddit Sans";
+  font-size: var(--m-font);
+  padding: var(--xs-spacing) var(--xs-spacing);
+  border: 1px solid var(--primary-color);
+  margin: var(--xs-spacing) auto;
+}
+
+.cta-link:hover,
+.cta-link:focus-visible {
+  color: white;
+  background-color: var(--primary-color);
+}
