@@ -81,9 +81,14 @@ header nav a:visited {
   color: var(--primary-color);
 }
 
+.cta-triangle a:visited {
+  color: var(--primary-color-invert);
+}
+
 header nav a:hover,
 header nav a[aria-current="page"] {
-  text-decoration: underline 3px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
   text-underline-offset: var(--xxs-spacing);
 }
 
@@ -132,6 +137,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 0 var(--xs-spacing);
   background-color: var(--secondary-color);
   color: white;
@@ -147,6 +153,10 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+footer a:visited {
+  color: white;
 }
 
 /* narrow */
